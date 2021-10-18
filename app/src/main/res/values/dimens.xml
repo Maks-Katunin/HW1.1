@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard_margin_0.5x">8dp</dimen>
+    <dimen name="standard_margin">16dp</dimen>
+    <dimen name="standard_margin_2x">32dp</dimen>
+    <dimen name="standard_margin_4x">64dp</dimen>
+    <dimen name="size_for_image">96dp</dimen>
+    <dimen name="size_for_text_2x">32sp</dimen>
+    <dimen name="size_for_text">16sp</dimen>
+</resources>

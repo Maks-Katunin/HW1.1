@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/size_for_image"
+        android:layout_height="@dimen/size_for_image"
+        android:layout_marginStart="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/standard_margin_2x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/standard_margin_2x"
+        android:text="HELLO THERE, \nWELCOME BACK"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_for_text_2x"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/recommendation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/standard_margin_2x"
+        android:text="Sign in to continue"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetings" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Username_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:hint="Username"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recommendation">
+
+        <EditText
+            android:id="@+id/Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/standard_margin_0.5x"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Username_input">
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginEnd="@dimen/standard_margin_2x"
+        android:text="FORGOT PASSWORD?"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password_input" />
+
+    <Button
+        android:id="@+id/btn_go"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:backgroundTint="@color/black"
+        android:padding="@dimen/standard_margin"
+        android:text="GO"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_for_text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_forgot_password" />
+
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:gravity="center"
+        android:text="NEW USER? SIGN UP"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_go" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

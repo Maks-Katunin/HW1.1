@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:src="@drawable/ic_baseline_face_24"
+        android:id="@+id/photo"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="@dimen/standard_margin_2x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/tv_edit_photo"
+        android:text="Edit photo"
+        android:textSize="@dimen/size_for_text_2x"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        app:layout_constraintTop_toBottomOf="@+id/photo"
+        style="@style/for_second_activity" />
+
+    <EditText
+        android:textColor="@color/red"
+        android:id="@+id/editText"
+        style="@style/for_second_activity"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:hint="Enter your name"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_edit_photo" />
+
+    <EditText
+
+
+
+        android:id="@+id/editText2"
+        style="@style/for_second_activity"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:hint="enter your last name"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        style="@style/for_second_activity"
+        android:id="@+id/private_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="private information"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <EditText
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        style="@style/for_second_activity"
+        android:id="@+id/email"
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/private_information" />
+
+    <EditText
+        android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+        android:id="@+id/phone_number"
+        style="@style/for_second_activity"
+        android:hint="Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:hint="Password"
+        android:inputType="textPassword"
+        style="@style/for_second_activity"
+        android:id="@+id/et_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+
+
+  <!--  <Button
+        android:background="@color/teal_200"
+        android:id="@+id/btn_back"
+        style="@style/for_second_activity"
+        android:layout_marginTop="14dp"
+        android:text="@string/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
